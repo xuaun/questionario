@@ -20,6 +20,16 @@ body {
     padding-left: 1rem;
 }
 
+#sq_100i, #sq_100i {
+    border: 1px solid #000;
+}
+
+#sq_100i:focus, #sq_100i:active, 
+#sq_101i:focus, #sq_101i:active{
+    border: 3px solid #76663f;
+    outline: #76663f auto auto;
+}
+
 .sv-string-viewer{
     color: #000;
     margin-bottom: 0;

@@ -884,7 +884,7 @@ body {
 .sv_main .sv_p_root .sv_q input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]):not([type=checkbox]):not([type=radio]):focus,
 .sv_main .sv_p_root .sv_q select:focus,
 .sv_main .sv_p_root .sv_q textarea:focus {
-    outline: none
+    outline:#76663f
 }
 
 .sv_main .sv_p_root .sv_q .sv_q_other input,
