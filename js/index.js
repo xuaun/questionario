@@ -1,5 +1,22 @@
+function animate(show) {
+    const element = document.getElementById("surveyElement");
+    if (!!element) {
+        const list = element.classList;
+        if (!list.contains("expandable")) {
+            list.add("expandable");
+        }
+        if (show) {
+            list.add("expandable_show");
+        } else {
+            list.remove("expandable_show");
+        }
+    }
+}
+
+var doAnimantion = true;
 function SurveyComponent() {
     const survey = new Survey.Model(json);
+
     survey.onComplete.add((sender, options) => {
         const data = sender.data;
 
@@ -15,6 +32,34 @@ function SurveyComponent() {
         element.click();
         document.body.removeChild(element);
     });
+
+    survey.onCurrentPageChanging.add(function (sender, options) {
+        if (!doAnimantion) return;
+        options.allowChanging = false;
+        setTimeout(function () {
+            doAnimantion = false;
+            sender.currentPage = options.newCurrentPage;
+            doAnimantion = true;
+        }, 500);
+        animate(false);
+    });
+    survey.onCurrentPageChanged.add(function (sender) {
+        animate(true);
+    });
+    survey.onCompleting.add(function (sender, options) {
+        if (!doAnimantion) return;
+        options.allowComplete = false;
+        setTimeout(function () {
+            doAnimantion = false;
+            sender.doComplete();
+            doAnimantion = true;
+        }, 500);
+        animate(true);
+    });
+    survey.onAfterRenderSurvey.add((sender, options) => {
+        animate(true);
+    });
+    
     return (<SurveyReact.Survey model={survey} />);
 }
 
