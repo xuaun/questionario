@@ -116,7 +116,7 @@
     padding: 8px;
     max-width: 336px;
     height: 100%;
-    background: #fff;
+    background: #e4e4e4;
     box-sizing: border-box;
     min-width: 256px
 }
@@ -168,7 +168,7 @@
     word-spacing: normal;
     word-wrap: normal;
     white-space: normal;
-    background-color: #fff;
+    background-color: #e4e4e4;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
@@ -210,7 +210,7 @@
     font-family: var(--font-family, var(--font-family));
     text-align: center;
     color: #161616;
-    background: #fff;
+    background: #e4e4e4;
     padding: 32px 0;
     box-shadow: 0px -1px 0px #d6d6d6
 }
@@ -249,7 +249,7 @@
     height: calc(3 * var(--base-unit, 8px));
     min-width: calc(12.5 * var(--base-unit, 8px));
     border-radius: calc(4.5 * var(--base-unit, 8px));
-    background-color: var(--background, #fff);
+    background-color: var(--background, #e4e4e4);
     padding: calc(2 * var(--base-unit, 8px));
     cursor: grabbing;
     position: absolute;
@@ -289,7 +289,7 @@
     position: absolute;
     left: 50%;
     bottom: calc(3 * var(--base-unit, 8px));
-    background: var(--background, #fff);
+    background: var(--background, #e4e4e4);
     opacity: 0;
     padding: calc(3 * var(--base-unit, 8px)) calc(6 * var(--base-unit, 8px));
     box-shadow: 0px 2px 6px rgba(0, 0, 0, .1);
@@ -338,7 +338,7 @@
 
 .sv-save-data_root.sv-save-data_error {
     background-color: var(--red, #e60a3e);
-    color: var(--background, #fff);
+    color: var(--background, #e4e4e4);
     font-weight: 600;
     padding: calc(2 * var(--base-unit, 8px)) calc(2 * var(--base-unit, 8px)) calc(2 * var(--base-unit, 8px)) calc(6 * var(--base-unit, 8px));
     gap: calc(6 * var(--base-unit, 8px))
@@ -349,9 +349,9 @@
     font-size: calc(1 * var(--sjs-font-size, calc(2 * var(--base-unit, 8px))));
     line-height: calc(3 * var(--base-unit, 8px));
     height: calc(5 * var(--base-unit, 8px));
-    color: #fff;
+    color: #e4e4e4;
     background-color: var(--red, #e60a3e);
-    border: calc(0.25 * var(--base-unit, 8px)) solid #fff;
+    border: calc(0.25 * var(--base-unit, 8px)) solid #e4e4e4;
     border-radius: calc(1.5 * var(--sjs-corner-radius, 4px));
     padding: calc(1 * var(--base-unit, 8px)) calc(3 * var(--base-unit, 8px));
     display: flex;
@@ -361,12 +361,12 @@
 .sv-save-data_root.sv-save-data_error .sv-save-data_button:hover,
 .sv-save-data_root.sv-save-data_error .sv-save-data_button:focus {
     color: var(--red, #e60a3e);
-    background-color: var(--background, #fff)
+    background-color: var(--background, #e4e4e4)
 }
 
 .sv-save-data_root.sv-save-data_success {
     background-color: var(--primary, #19b394);
-    color: #fff;
+    color: #e4e4e4;
     font-weight: 600
 }
 
@@ -386,7 +386,7 @@ body {
 }
 
 .sv_main {
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main hr {
@@ -395,7 +395,7 @@ body {
 
 .sv_main input[type=button],
 .sv_main button {
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: #76663f
 }
 
@@ -415,7 +415,7 @@ body {
     -moz-appearance: none;
     border: 1px solid #000;
     color: #000;
-    background-color: #fff;
+    background-color: #e4e4e4;
     opacity: 1
 }
 
@@ -525,18 +525,18 @@ body {
     position: relative;
     display: flex;
     border-radius: 2px;
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: #76663f
 }
 
 .sv_main .sv_q_tagbox-item_clean-button-svg {
-    fill: var(--body-background-color, white);
+    fill: #e4e4e4;
     width: 16px;
     height: 16px
 }
 
 .sv_main .sv_select_wrapper {
-    background-color: var(--body-background-color, white)
+    background-color: #e4e4e4
 }
 
 .sv_main .sv_select_wrapper:before {
@@ -565,11 +565,11 @@ body {
 }
 
 .sv_main .sv_p_root>.sv_row:nth-child(odd) {
-    background-color: var(--body-background-color, white)
+    background-color: #e4e4e4
 }
 
 .sv_main .sv_p_root>.sv_row:nth-child(even) {
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main .sv_q_erbox:not([style*="display: none"]):not([style*="display:none"]) {
@@ -631,14 +631,14 @@ body {
 }
 
 .sv_main .sv_q_m_cell_selected {
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: #76663f
 }
 
 .sv_main .sv_q_rating_item.active .sv_q_rating_item_text {
     background-color: #76663f;
     border-color: #76663f;
-    color: var(--body-background-color, white)
+    color: #e4e4e4
 }
 
 .sv_main .sv_q_rating_item .sv_q_rating_item_text {
@@ -690,7 +690,7 @@ body {
 
 .sv_main .sv_q_rating__item-smiley--selected>svg {
     background-color: #76663f;
-    fill: var(--body-background-color, white)
+    fill: #e4e4e4
 }
 
 .sv_main .sv_q_imgsel.checked label>div {
@@ -729,13 +729,11 @@ body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-size: .85em;
     font-weight: bold;
     line-height: var(--base-line-height, 2em);
     border: none;
-    min-width: 100px;
     cursor: pointer;
-    padding: .3em 2em;
+    padding: 0;
     border-radius: 2px
 }
 
@@ -818,7 +816,7 @@ body {
 .sv_main .sv_p_root .sv_q_title {
     font-weight: bold;
     font-size: 2em;
-    margin: 1.5em 0
+    margin: 1.5em 5em
 }
 
 .sv_main .sv_p_root .sv_q--disabled .sv_q_title {
@@ -875,7 +873,7 @@ body {
     box-sizing: border-box;
     font-size: 2em;
     line-height: var(--base-line-height, 2em);
-    padding-inline-start: 1em
+    padding-inline-start: .6em
 }
 
 .sv_main .sv_p_root .sv_q .sv_q_other input:focus,
@@ -1158,7 +1156,7 @@ body {
 }
 
 .sv_main.sv_main .sv-action-bar-item.sv_edit_btn {
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: #76663f;
     float: left;
     margin-bottom: 7px
@@ -1463,7 +1461,7 @@ body {
     border: none;
     border-radius: 2px;
     background-color: #76663f;
-    fill: #fff;
+    fill: #e4e4e4;
     width: 24px;
     height: 24px
 }
@@ -1474,7 +1472,7 @@ body {
 
 .sv-boolean--allowhover:hover .sv-boolean__svg {
     background-color: #9f9f9f;
-    fill: #fff
+    fill: #e4e4e4
 }
 
 .sv-boolean--allowhover:hover .sv-boolean__unchecked-path,
@@ -1577,7 +1575,7 @@ sv-components-container,
 }
 
 .sv_main.sv_default_css {
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css hr {
@@ -1586,13 +1584,8 @@ sv-components-container,
 
 .sv_main.sv_default_css input[type=button],
 .sv_main.sv_default_css button {
-    color: var(--body-background-color, white);
-    background-color: #76663f
-}
-
-.sv_main.sv_default_css input[type=button]:hover,
-.sv_main.sv_default_css button:hover {
-    background-color: var(--main-hover-color, #9f9f9f)
+    color: transparent;
+    background-color: transparent
 }
 
 .sv_main.sv_default_css .sv_header {
@@ -1608,7 +1601,7 @@ sv-components-container,
 }
 
 .sv_main.sv_default_css .sv_body {
-    background-color: #fff;
+    background-color: #e4e4e4;
     border-color: #76663f
 }
 
@@ -1648,12 +1641,12 @@ sv-components-container,
 
 .sv_main.sv_default_css .sv_progress-buttons__list li.sv_progress-buttons__list-element--current:before {
     border-color: #76663f;
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_progress-buttons__list li.sv_progress-buttons__list-element--passed.sv_progress-buttons__list-element--current:before {
     border-color: #76663f;
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_p_root>.sv_row {
@@ -1661,11 +1654,11 @@ sv-components-container,
 }
 
 .sv_main.sv_default_css .sv_p_root>.sv_row:nth-child(odd) {
-    background-color: var(--body-background-color, white)
+    background-color: #acccac
 }
 
 .sv_main.sv_default_css .sv_p_root>.sv_row:nth-child(even) {
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_q_other input {
@@ -1679,13 +1672,13 @@ sv-components-container,
     color: #000;
     -webkit-text-fill-color: #000;
     border-color: #000;
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_q_dropdown_control {
     color: var(--text-input-color, #6d7072);
     border-color: #000;
-    background-color: #fff
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_q_dropdown_control__input-field-component {
@@ -1714,7 +1707,7 @@ sv-components-container,
 
 .sv_main.sv_default_css input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]):not([type=checkbox]):not([type=radio]) {
     border: 1px solid #000;
-    background-color: #fff;
+    background-color: #e4e4e4;
     color: #000;
     -webkit-text-fill-color: #000
 }
@@ -1793,7 +1786,7 @@ sv-components-container,
 }
 
 .sv_main.sv_default_css .sv_select_wrapper {
-    background-color: var(--body-background-color, white)
+    background-color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_select_wrapper::before {
@@ -1803,7 +1796,7 @@ sv-components-container,
 .sv_main.sv_default_css .sv_q_rating_item.active .sv_q_rating_item_text {
     background-color: var(--main-hover-color, #9f9f9f);
     border-color: #000;
-    color: var(--body-background-color, white)
+    color: #e4e4e4
 }
 
 .sv_main.sv_default_css .sv_q_rating_item .sv_q_rating_item_text {
@@ -1827,7 +1820,7 @@ sv-components-container,
 }
 
 .sv_main.sv_default_css .sv_q_m_cell_selected {
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: var(--main-hover-color, #9f9f9f)
 }
 
@@ -1836,7 +1829,7 @@ sv-components-container,
 }
 
 .sv_main .sv_q_file_choose_button {
-    color: var(--body-background-color, white);
+    color: #e4e4e4;
     background-color: #76663f
 }
 
@@ -1880,7 +1873,7 @@ sv-components-container,
 }
 
 .sv_main .sv-boolean__slider {
-    background-color: var(--slider-color, #fff)
+    background-color: var(--slider-color, #e4e4e4)
 }
 
 .sv_main .sv-boolean__label--disabled {
@@ -1940,7 +1933,7 @@ sv-components-container,
 }
 
 .sv_main .sv-button-group__item {
-    background: var(--body-background-color, white);
+    background: #e4e4e4;
     border-color: var(--border-color, rgba(64, 64, 64, 0.5))
 }
 
@@ -2524,7 +2517,7 @@ f-panel {
 }
 
 .sv-ranking-item:focus .sv-ranking-item__index {
-    background: #fff;
+    background: #e4e4e4;
     box-shadow: 0 0 0 2px var(--primary, #19b394)
 }
 
@@ -3104,7 +3097,7 @@ sv-popup {
 }
 
 .sv-popup__body-content {
-    background-color: var(--background, #fff);
+    background-color: var(--background, #e4e4e4);
     border-radius: calc(.5*var(--base-unit, 8px));
     width: 100%;
     height: 100%;
@@ -3167,7 +3160,7 @@ sv-popup {
 
 .sv-popup--overlay .sv-popup__body-content {
     border-radius: calc(2*var(--base-unit, 8px)) calc(2*var(--base-unit, 8px)) 0px 0px;
-    background: var(--background, #fff);
+    background: var(--background, #e4e4e4);
     box-shadow: 0px calc(1*var(--base-unit, 8px)) calc(2*var(--base-unit, 8px)) rgba(0, 0, 0, .1);
     padding: calc(3*var(--base-unit, 8px)) calc(2*var(--base-unit, 8px)) calc(2*var(--base-unit, 8px));
     height: calc(100% - 1*var(--base-unit, 8px));
@@ -3198,7 +3191,7 @@ sv-popup {
 .sv-popup--overlay .sv-popup__button {
     background-color: var(--primary, #19b394);
     border: 2px solid var(--primary, #19b394);
-    color: var(--primary-foreground, #fff)
+    color: var(--primary-foreground, #e4e4e4)
 }
 
 .sv-popup__scrolling-content {
@@ -3262,7 +3255,7 @@ sv-popup {
     height: 0;
     border-left: calc(1*var(--base-unit, 8px)) solid rgba(0, 0, 0, 0);
     border-right: calc(1*var(--base-unit, 8px)) solid rgba(0, 0, 0, 0);
-    border-bottom: calc(1*var(--base-unit, 8px)) solid var(--background, #fff);
+    border-bottom: calc(1*var(--base-unit, 8px)) solid var(--background, #e4e4e4);
     align-self: center
 }
 
@@ -3287,7 +3280,7 @@ sv-popup {
 
 .sv-popup__button {
     padding: calc(2*var(--base-unit, 8px)) calc(6*var(--base-unit, 8px));
-    background: var(--background, #fff);
+    background: var(--background, #e4e4e4);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
     border-radius: 4px;
     margin: 2px;
@@ -3318,7 +3311,7 @@ sv-popup {
 
 .sv-popup__button.sv-popup__button--apply {
     background-color: var(--primary, #19b394);
-    color: var(--primary-foreground, #fff)
+    color: var(--primary-foreground, #e4e4e4)
 }
 
 .sv-popup__button.sv-popup__button--apply:disabled {
@@ -3328,7 +3321,7 @@ sv-popup {
 .sv-list {
     padding: 0;
     margin: 0;
-    background: var(--background, #fff);
+    background: var(--background, #e4e4e4);
     list-style-type: none;
     overflow-y: auto
 }
@@ -3395,7 +3388,7 @@ sv-popup {
 }
 
 .sv-list__item--selected .sv-list__item-icon use {
-    fill: var(--primary-foreground, #fff)
+    fill: var(--primary-foreground, #e4e4e4)
 }
 
 .sv-list__item.sv-list__item--disabled {
@@ -3419,7 +3412,7 @@ sv-popup {
 
 .sv-list__filter {
     border-bottom: 1px solid rgba(0, 0, 0, .16);
-    background: var(--background, #fff);
+    background: var(--background, #e4e4e4);
     padding-bottom: calc(1 * var(--base-unit, 8px))
 }
 

@@ -8,7 +8,7 @@
 /* #000000, #ffffff, #b7b7b7; */
 
 body {
-    background: #ffffff;
+    background: #e4e4e4;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -20,21 +20,42 @@ body {
     padding-left: 1rem;
 }
 
+.sv_prev_btn {
+    border: none;
+    outline: none;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
+
+#sv-nav-next {
+    visibility: collapse;
+}
+
 #sq_100i,
-#sq_100i {
-    border: 1px solid #000;
+#sq_101i {
+    border: 2px solid #000;
+    background-color: #fff;
 }
 
 #sq_100i:focus,
 #sq_100i:active,
 #sq_101i:focus,
 #sq_101i:active {
-    border: 3px solid #76663f;
+    border: 5px solid #76663f;
     outline: #76663f auto auto;
 }
 
+#sp_100 .sv_row {
+    background-color: #e4e4e4;
+}
+
 .sv-string-viewer {
-    color: #000;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -44,6 +65,24 @@ body {
 
 .sv_q_title {
     text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: #33721d;
+    padding-top: 22px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #232223;
+}
+
+.sv_q_required_text {
+    color: #fff;
+}
+
+#sq_100_ariaTitle,
+#sq_101_ariaTitle {
+    width: 220px;
+    border-radius: 50px;
 }
 
 .sv_qcbc {
@@ -70,15 +109,23 @@ body {
 
 .sv_qcbc label {
     display: inline-block;
-    background-color: #b7b7b7;
-    padding: 15px 100px 10px 100px;
+    background-color: #eeefee;
+    height: 80px;
+    width: 80px;
+    padding-top: 25px;
     font-family: sans-serif, Arial;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #232223;
+}
+
+.sv_qcbc .sv-string-viewer {
+    color: #232223;
 }
 
 .sv_qcbc label:hover {
     background-color: #76663f;
+    box-shadow: 7px 7px 7px #232223;
 }
 
 .sv_qcbc input[type="radio"]:focus+label {
@@ -91,15 +138,127 @@ body {
 }
 
 .expandable {
-    background: #fff;
+    background: #e4e4e4;
     overflow: hidden;
-    color: #000;
-
-    transition: all .5s ease-in-out;
+    transition-duration: .5s;
     transform-origin: left left;
     transform: scaleX(0);
 }
 
 .expandable_show {
-    transform: scaleY(1);
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+
+/* .countdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+} */
+
+.countdown-container {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    z-index: 9999; */
+    position: fixed;
+    top:auto;
+    right: auto;
+    margin: 40px auto;
+    background: #7c7c7c;
+    border-radius: 50%;
+}
+
+.countdown-container,
+.countdown-container * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.countdown-container {
+    width: 250px;
+    height: 250px;
+}
+
+.countdown,
+.filler {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #399e22;
+    border: none
+}
+
+.countdown {
+    /* font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation-name: countdown-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; */
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota 5s linear infinite;
+}
+
+.filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa 5s steps(1, end) infinite reverse;
+    border-left: none;
+}
+
+.mask {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa 5s steps(1, end) infinite;
+}
+
+@keyframes rota {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
 }

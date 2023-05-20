@@ -1,5 +1,5 @@
 const json = {
-    title: "", showProgressBar: "", goNextPageAutomatic: true, showNavigationButtons: false,
+    title: "", showProgressBar: "", goNextPageAutomatic: true, showNavigationButtons: true,
 
     pages: [
         {
@@ -170,6 +170,6 @@ const json = {
             ]
         }
     ],
-    completedHtml: "Fim das questões"
+    completedHtml: "Obrigado por participar!"
     /* <p>Respostas:</p><p>1: <b>{P1}</b>.</p><p>2: <b>{P2}</b>.</p><p>3: <b>{P3}</b>.</p><p>4: <b>{P4}</b>.</p><p>5: <b>{P5}</b>.</p><p>6: <b>{P6}</b>.</p><p>7: <b>{P7}</b>.</p><p>8: <b>{P8}</b>.</p><p>9: <b>{P9}</b>.</p><p>10: <b>{P10}</b>.</p><p>11: <b>{P11}</b>.</p><p>12: <b>{P12}</b>.</p><p>13: <b>{P13}</b>.</p><p>14: <b>{P14}</b>.</p><p>15: <b>{P15}</b>.</p> */
 };

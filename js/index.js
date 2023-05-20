@@ -9,6 +9,9 @@ function animate(show) {
             list.add("expandable_show");
         } else {
             list.remove("expandable_show");
+            setTimeout(function(){
+                startCountdown();
+            }, 500);
         }
     }
 }
@@ -19,13 +22,23 @@ function SurveyComponent() {
 
     survey.onComplete.add((sender, options) => {
         const data = sender.data;
+        const date = new Date();
 
-        const fields = ['Nome', 'Idade', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'P9', 'P10', 'P11', 'P12', 'P13', 'P14', 'P15'];
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let currentDate = `${day}/${month}/${year}`;
+
+        const dataWithDate = {
+            "Data": currentDate,
+            ...data
+        };
 
         const element = document.createElement("a");
 
-        element.setAttribute("href", `data:text/csv;charset=utf-8,${json2csv.parse(data,{fields})}`);
-        element.setAttribute("download", "filename.csv");
+        element.setAttribute("href", `data:text/csv;charset=utf-8,${json2csv.parse([dataWithDate])}`);
+        element.setAttribute("download", "Avaliacao_Compreensao_Libras.csv");
         element.style.display = "none";
 
         document.body.appendChild(element);
@@ -40,7 +53,7 @@ function SurveyComponent() {
             doAnimantion = false;
             sender.currentPage = options.newCurrentPage;
             doAnimantion = true;
-        }, 500);
+        }, 5000);
         animate(false);
     });
     survey.onCurrentPageChanged.add(function (sender) {
@@ -59,9 +72,57 @@ function SurveyComponent() {
     survey.onAfterRenderSurvey.add((sender, options) => {
         animate(true);
     });
-    
+
     return (<SurveyReact.Survey model={survey} />);
 }
 
 const root = ReactDOM.createRoot(document.getElementById("surveyElement"));
 root.render(<SurveyComponent />);
+
+/* function startCountdown() {
+    var countdownElement = document.createElement("div");
+    countdownElement.className = "countdown";
+    countdownElement.innerText = "5";
+    document.body.appendChild(countdownElement);
+
+    var countdown = 5;
+    var countdownInterval = setInterval(function () {
+        countdown--;
+        countdownElement.innerText = countdown.toString();
+
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            document.body.removeChild(countdownElement);
+            SurveyComponent().survey.nextPage();
+        }
+    }, 1000);
+} */
+
+function startCountdown() {
+    var countdownContainer = document.createElement("div");
+    countdownContainer.className = "countdown-container";
+    document.body.appendChild(countdownContainer);
+
+    var countdownElement = document.createElement("div");
+    countdownElement.className = "countdown";
+    countdownContainer.appendChild(countdownElement);
+
+    var countdownFiller = document.createElement("div");
+    countdownFiller.className = "filler";
+    countdownContainer.appendChild(countdownFiller);
+
+    var countdownMask = document.createElement("div");
+    countdownMask.className = "mask";
+    countdownContainer.appendChild(countdownMask);
+
+    var countdown = 5;
+    var countdownInterval = setInterval(function () {
+        countdown--;
+
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            document.body.removeChild(countdownContainer);
+            SurveyComponent().survey.nextPage();
+        }
+    }, 1000);
+}
