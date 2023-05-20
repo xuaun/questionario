@@ -69,7 +69,7 @@ body {
     height: 100px;
     background-color: #33721d;
     padding-top: 22px;
-    font-family: sans-serif, Arial;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     border-radius: 50%;
     box-shadow: 4px 4px 4px #232223;
@@ -94,6 +94,7 @@ body {
 }
 
 .sv-string-viewer {
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
 }
 
@@ -113,7 +114,7 @@ body {
     height: 80px;
     width: 80px;
     padding-top: 25px;
-    font-family: sans-serif, Arial;
+    font-family: "Open Sans", sans-serif, Arial;
     font-size: 16px;
     border-radius: 50%;
     box-shadow: 4px 4px 4px #232223;
