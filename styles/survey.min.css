@@ -1195,12 +1195,6 @@ body {
 
 @media(max-width: 600px) {
 
-    .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_q,
-    .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_qstn {
-        display: block;
-        width: 100% !important
-    }
-
     .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_q .title-left,
     .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_qstn .title-left {
         float: none
