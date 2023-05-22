@@ -11,7 +11,7 @@ function animate(show) {
             list.remove("expandable_show");
             setTimeout(function(){
                 startCountdown();
-            }, 500);
+            }, 1500);
         }
     }
 }
@@ -53,7 +53,7 @@ function SurveyComponent() {
             doAnimantion = false;
             sender.currentPage = options.newCurrentPage;
             doAnimantion = true;
-        }, 5000);
+        }, 4000);
         animate(false);
     });
     survey.onCurrentPageChanged.add(function (sender) {
@@ -66,7 +66,7 @@ function SurveyComponent() {
             doAnimantion = false;
             sender.doComplete();
             doAnimantion = true;
-        }, 500);
+        }, 1000);
         animate(true);
     });
     survey.onAfterRenderSurvey.add((sender, options) => {
@@ -115,7 +115,7 @@ function startCountdown() {
     countdownMask.className = "mask";
     countdownContainer.appendChild(countdownMask);
 
-    var countdown = 5;
+    var countdown = 3;
     var countdownInterval = setInterval(function () {
         countdown--;
 
