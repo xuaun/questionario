@@ -21,14 +21,14 @@ body {
 }
 
 .sv_prev_btn {
-    border: none;
+    border: 1px solid black;
     outline: none;
     font-size: 0;
     height: 50px;
     width: 50px;
     cursor: pointer;
     position: fixed;
-    bottom: -50px;
+    bottom: 0px;
     left: 0;
 }
 
