@@ -736,7 +736,7 @@ body {
 }
 
 .sv_main .sv_body {
-    padding: 1em 1em 1.6428em 1em
+    padding: 1em 1em 2em 2em
 }
 
 .sv_main .sv_progress {
@@ -1487,8 +1487,8 @@ sv-components-container,
 
 .sv_main.sv_default_css input[type=button],
 .sv_main.sv_default_css button {
-    color: transparent;
-    background-color: transparent
+    color: black;
+    background-color: black
 }
 
 .sv_main.sv_default_css .sv_header {
