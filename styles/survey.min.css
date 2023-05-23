@@ -395,8 +395,8 @@ body {
 
 .sv_main input[type=button],
 .sv_main button {
-    color: #e4e4e4;
-    background-color: #76663f
+    color: transparent;
+    background-color: transparent
 }
 
 .sv_main input[type=button]:hover,
@@ -1487,8 +1487,8 @@ sv-components-container,
 
 .sv_main.sv_default_css input[type=button],
 .sv_main.sv_default_css button {
-    color: black;
-    background-color: black
+    color: transparent;
+    background-color: transparent
 }
 
 .sv_main.sv_default_css .sv_header {
