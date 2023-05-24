@@ -20,6 +20,10 @@ body {
     padding-left: 1rem;
 }
 
+.sv_page_title .sv-string-viewer {
+    color: #33721d;
+}
+
 .sv_prev_btn {
     outline: none;
     font-size: 0;
