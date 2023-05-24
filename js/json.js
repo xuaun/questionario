@@ -20,6 +20,39 @@ const json = {
             ]
         },
         {
+            "title": "Teste",
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "T1",
+                    "title": "1",
+                    "choices": ["A", "B", "C"]
+                }
+            ]
+        },
+        {
+            "title": "Teste",
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "T2",
+                    "title": "2",
+                    "choices": ["A", "B", "C"]
+                }
+            ]
+        },
+        {
+            "title": "Teste",
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "T3",
+                    "title": "3",
+                    "choices": ["A", "B", "C"]
+                }
+            ]
+        },
+        {
             "elements": [
                 {
                     "type": "radiogroup",
