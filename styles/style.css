@@ -20,6 +20,19 @@ body {
     padding-left: 1rem;
 }
 
+.zoom-disabled {
+    touch-action: none;
+}
+
+.zoom-btn {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-color: #000;
+    height: 50px;
+    width: 50px;
+}
+
 .sv_page_title .sv-string-viewer {
     color: #eeefee;
     display: inline-block;
