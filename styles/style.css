@@ -279,7 +279,18 @@ body {
     border: none
 }
 
-.countdown {
+.countdown-teste,
+.filler-teste {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #721d6e;
+    border: none
+}
+
+.countdown,
+.countdown-teste {
     /* font-size: 24px;
     font-weight: bold;
     background-color: #fff;
@@ -300,7 +311,8 @@ body {
     animation: rota 3s linear infinite;
 }
 
-.filler {
+.filler,
+.filler-teste {
     border-radius: 0 100% 100% 0 / 0 50% 50% 0;
     left: 50%;
     opacity: 0;
