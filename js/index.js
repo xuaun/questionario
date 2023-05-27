@@ -1,3 +1,13 @@
+function toggleZoom() {
+    var htmlElement = document.querySelector("html");
+
+    if (htmlElement.classList.contains("zoom-disabled")) {
+        htmlElement.classList.remove("zoom-disabled");
+    } else {
+        htmlElement.classList.add("zoom-disabled");
+    }
+}
+
 function animate(show) {
     const element = document.getElementById("surveyElement");
     if (!!element) {
