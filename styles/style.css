@@ -120,6 +120,10 @@ body {
     border-radius: 15px;
 }
 
+#sq_102 .sv-string-viewer {
+    font-size: 3em;
+}
+
 #sp_101 .sv_p_root,
 #sp_102 .sv_p_root,
 #sp_103 .sv_p_root {
@@ -160,6 +164,8 @@ body {
 #sq_100_ariaTitle,
 #sq_101_ariaTitle {
     width: 220px;
+    padding-top: 20px;
+    font-size: 120%;
     border-radius: 50px;
 }
 
