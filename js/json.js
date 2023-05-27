@@ -3,24 +3,35 @@ const json = {
 
     pages: [
         {
+            "name": "page1",
+            "clearInvisibleValues": "onHidden",
             "elements": [
                 {
                     "type": "text",
                     "name": "Nome",
                     "title": "Nome",
-                    "isRequired": true
                 },
                 {
                     "type": "text",
                     "name": "Idade",
                     "title": "Idade",
                     "inputType": "number",
+                },
+                {
+                    "type": "radiogroup",
+                    "name": "Comecar-teste",
+                    "title": false,
+                    "choices": ["Começar"],
+                    "visibleIf": "{Idade} >= 0 and {Nome} != ''",
+                },
+                {
+                    "visibleIf": "{Idade} >= 0 and {Nome} != '' and {Comecar-teste} = 'checked'",
                     "isRequired": true
                 }
             ]
         },
         {
-            "title": "Teste",
+            "title": "Questão teste",
             "elements": [
                 {
                     "type": "radiogroup",
@@ -31,7 +42,7 @@ const json = {
             ]
         },
         {
-            "title": "Teste",
+            "title": "Questão teste",
             "elements": [
                 {
                     "type": "radiogroup",
@@ -42,7 +53,7 @@ const json = {
             ]
         },
         {
-            "title": "Teste",
+            "title": "Questão teste",
             "elements": [
                 {
                     "type": "radiogroup",
