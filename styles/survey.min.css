@@ -782,7 +782,7 @@ body {
     align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
-    margin: 1.5rem 3rem
+    margin: 2rem 3rem
 }
 
 .sv_main .sv_p_root .sv_q--disabled .sv_q_file .sv_q_file_choose_button {
@@ -1010,7 +1010,7 @@ body {
     padding-top: .1em;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .sv_main .sv_p_root .sv_q_checkbox_label,
