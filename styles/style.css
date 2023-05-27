@@ -21,7 +21,16 @@ body {
 }
 
 .sv_page_title .sv-string-viewer {
-    color: #33721d;
+    color: #eeefee;
+    display: inline-block;
+    background-color: #721d6e;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 1.5em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px #232223;
 }
 
 .sv_prev_btn {
@@ -53,8 +62,73 @@ body {
     outline: #76663f auto auto;
 }
 
-#sp_100 .sv_row {
+#sq_100_errors {
+    border: transparent;
+    background-color: #76663f;
+    color: #76663f;
+}
+
+#sq_100_errors .sv-string-viewer {
+    font-size: 0px;
+}
+
+#sq_100_errors .sv-string-viewer:after {
+    content: "Escreva seu nome";
+    font-size: 2rem !important;
+}
+
+#sq_101_errors {
+    border: transparent;
+    background-color: #76663f;
+    color: #76663f;
+}
+
+#sq_101_errors .sv-string-viewer {
+    font-size: 0px;
+}
+
+#sq_101_errors .sv-string-viewer:after {
+    content: "Escreva sua idade";
+    font-size: 2rem !important;
+}
+
+#sp_100 .sv_row,
+#sp_100 .sv_p_root {
     background-color: #e4e4e4;
+}
+
+#sq_102_ariaTitle,
+#sq_102_errors {
+    visibility:collapse;
+}
+#sp_100 [data-key = "Comecar-teste0"] {
+    visibility: hidden;
+}
+
+#sp_100 .sv_q_radiogroup {
+    visibility: visible;
+    position:fixed;
+    top: 65%;
+    right: 0%;
+}
+
+#sp_100 .sv_q_radiogroup_label {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#sp_101 .sv_p_root,
+#sp_102 .sv_p_root,
+#sp_103 .sv_p_root {
+    background-color: #c4accc;
+}
+
+#sp_101 .sv_q_title,
+#sp_102 .sv_q_title,
+#sp_103 .sv_q_title {
+    background-color: #721d6e
 }
 
 .sv-string-viewer {
