@@ -22,7 +22,6 @@ const json = {
                     "name": "Comecar-teste",
                     "title": false,
                     "choices": ["Começar"],
-                    "visibleIf": "{Idade} >= 0 and {Nome} != ''",
                 },
                 {
                     "visibleIf": "{Idade} >= 0 and {Nome} != '' and {Comecar-teste} = 'checked'",
