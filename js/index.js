@@ -1,3 +1,14 @@
+window.addEventListener('beforeunload', function (event) {
+    // Cancela o evento de saída da página
+    event.preventDefault();
+    // Chrome requer a atribuição de um valor para a propriedade returnValue
+    event.returnValue = '';
+
+    // Exibe a mensagem de aviso ao usuário
+    var message = 'Você tem progresso não salvo no questionário. Se você sair ou atualizar a página, perderá o progresso.';
+    return message;
+});
+
 function toggleZoom() {
     var htmlElement = document.querySelector("html");
 
