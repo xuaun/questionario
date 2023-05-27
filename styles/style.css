@@ -28,7 +28,8 @@ body {
     width: auto;
     padding: 10px;
     font-family: "Open Sans", sans-serif, Arial;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
     border-radius: 15px;
     box-shadow: 4px 4px 4px #232223;
 }
@@ -142,10 +143,10 @@ body {
 
 .sv_q_title {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #33721d;
-    padding-top: 22px;
+    padding-top: 10px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     border-radius: 50%;
@@ -172,7 +173,7 @@ body {
 
 .sv-string-viewer {
     font-family: "Open Sans", sans-serif;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .sv_q_radiogroup_label {
@@ -188,9 +189,9 @@ body {
 .sv_qcbc label {
     display: inline-block;
     background-color: #eeefee;
-    height: 80px;
-    width: 80px;
-    padding-top: 25px;
+    height: 90px;
+    width: 90px;
+    padding-top: 30px;
     font-family: "Open Sans", sans-serif, Arial;
     font-size: 16px;
     border-radius: 50%;
