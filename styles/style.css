@@ -28,7 +28,7 @@ body {
     position: fixed;
     left: 0%;
     top: 0%;
-    background-color: #000;
+    background-color: transparent;
     height: 50px;
     width: 50px;
 }
