@@ -16,6 +16,7 @@ function animate(show) {
     }
 }
 
+var currentPage = 0;
 var doAnimantion = true;
 function SurveyComponent() {
     const survey = new Survey.Model(json);
@@ -51,6 +52,7 @@ function SurveyComponent() {
         options.allowChanging = false;
         setTimeout(function () {
             doAnimantion = false;
+            currentPage = options.newCurrentPage;
             sender.currentPage = options.newCurrentPage;
             doAnimantion = true;
         }, 4000);
@@ -104,11 +106,19 @@ function startCountdown() {
     document.body.appendChild(countdownContainer);
 
     var countdownElement = document.createElement("div");
-    countdownElement.className = "countdown";
+    if (currentPage.num >= 4&& currentPage.num <= 20) {
+        countdownElement.className = "countdown";
+    } else {
+        countdownElement.className = "countdown-teste";
+    }
     countdownContainer.appendChild(countdownElement);
 
     var countdownFiller = document.createElement("div");
-    countdownFiller.className = "filler";
+    if (currentPage.num >= 4&& currentPage.num <= 20) {
+        countdownFiller.className = "filler";
+    } else  {
+        countdownFiller.className = "filler-teste";
+    }
     countdownContainer.appendChild(countdownFiller);
 
     var countdownMask = document.createElement("div");
