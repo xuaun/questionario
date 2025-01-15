@@ -2,7 +2,7 @@
 ## Languages
 This first section is in English. 
 
-[Versão em português logo abaixo.](#Questionario-de-Pesquisa)
+[Versão em português logo abaixo.](#questionario-de-pesquisa)
 
 ## Context
 Survey (in Brazilian Portuguese: "Questionário") created to be applied in a research project of the research group "GPSABilíngue". 
