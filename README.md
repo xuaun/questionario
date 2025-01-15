@@ -2,7 +2,7 @@
 ## Languages
 This first section is in English. 
 
-[Versão em português logo abaixo.](#questionario-de-pesquisa)
+[Versão em português logo abaixo.](#portuguese)
 
 ## Context
 Survey (in Brazilian Portuguese: "Questionário") created to be applied in a research project of the research group "GPSABilíngue". 
@@ -50,7 +50,7 @@ In this project, ```HTML```, ```CSS```, ```JavaScript (with React and surveyjs: 
 ____
 <br>
 
-# Questionário de Pesquisa
+# <p id="portuguese">Questionário de Pesquisa</p>
 ## Contexto
 Questionário criado para ser aplicado no projeto de pesquisa do grupo "GPSABilíngue".
 
