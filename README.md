@@ -43,7 +43,7 @@ To access this questionnaire, access its web version at https://xuaun.github.io/
 In this project, ```HTML```, ```CSS```, ```JavaScript (with React and surveyjs: Survey Library JavaScript``` were used.
 
 ____
-<br><br>
+<br>
 
 # Questionário de Pesquisa
 ## Contexto
