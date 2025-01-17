@@ -45,7 +45,7 @@ The research with this sigital survey consists of four stages:
 To access this questionnaire, access its web version at https://xuaun.github.io/questionario/.
 
 ## Technologies used
-In this project, ```HTML```, ```CSS```, ```JavaScript (with React and surveyjs: Survey Library JavaScript``` were used.
+In this project, ```HTML```, ```CSS```, ```JavaScript (with React and surveyjs: Survey Library JavaScript)``` were used.
 
 ____
 <br>
@@ -92,4 +92,4 @@ A pesquisa com este questionário consta de quatro etapas:
 Para acessar este questionário, acesse sua versão web em https://xuaun.github.io/questionario/.
 
 ## Tecnologias utilizadas
-Neste projeto, foi utilizado ```HTML```, ```CSS```, ```JavaScript (com React e surveyjs: Survey Library JavaScript``` .
+Neste projeto, foi utilizado ```HTML```, ```CSS```, ```JavaScript (com React e surveyjs: Survey Library JavaScript)``` .
